@@ -9,93 +9,49 @@ export default function Header() {
 
   return (
     <>
-      <header className="bg-secondary border-b border-border sticky top-0 z-50">
-        {/* Top Banner */}
-        <div className="bg-highlight text-secondary text-center py-2 px-4">
-          <div className="flex items-center justify-between max-w-7xl mx-auto">
-            <div className="flex items-center space-x-4 text-sm">
-              <span>📞 +855-123-4547</span>
-              <span>✉️ contact@example.com</span>
+      <header className="absolute top-0 left-0 right-0 z-50">
+        {/* Top bar */}
+        <div className="bg-black/50 text-white py-2">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center text-sm">
+            <div className="flex space-x-4">
+              <span>+855-123-4547</span>
+              <span>contact@example.com</span>
             </div>
-            <div className="text-sm font-medium">
-              Summer discount of 70%. SHOP NOW
-            </div>
-            <div className="flex items-center space-x-4 text-sm">
-              <span className="flex items-center">
-                English <ChevronDown className="ml-1 h-3 w-3" />
-              </span>
-              <span className="flex items-center">
-                USD <ChevronDown className="ml-1 h-3 w-3" />
-              </span>
+            <div className="flex space-x-4">
+              <span>English</span>
+              <span>USD</span>
               <span>Need Help?</span>
             </div>
           </div>
         </div>
 
-        {/* Main Navigation */}
-        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            {/* Logo */}
-            <div className="flex-shrink-0">
-              <Link to="/">
-                <h1 className="text-2xl font-bold text-primary tracking-wider">ZENNY</h1>
-              </Link>
+        {/* Main navigation */}
+        <nav className="bg-transparent py-4">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <Link to="/" className="text-white text-2xl font-bold">ZENNY</Link>
+            <div className="flex space-x-6 text-white">
+              <Link to="/" className="hover:text-gray-300">HOME</Link>
+              <Link to="/shop" className="hover:text-gray-300">SHOP</Link>
+              <Link to="/collection" className="hover:text-gray-300">COLLECTION</Link>
+              <Link to="/blog" className="hover:text-gray-300">BLOG</Link>
+              <Link to="/pages" className="hover:text-gray-300">PAGES</Link>
+              <Link to="/elementors" className="hover:text-gray-300">ELEMENTORS</Link>
+              <Link to="/sale" className="hover:text-gray-300">SALE</Link>
             </div>
-
-            {/* Desktop Navigation */}
-            <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-8">
-                <Link to="/">
-                  <Button variant="ghost" className="text-primary hover:text-highlight transition-colors duration-200 px-3 py-2 text-sm font-medium">
-                    HOME <ChevronDown className="ml-1 h-3 w-3" />
-                  </Button>
-                </Link>
-                <Button variant="ghost" className="text-text-gray hover:text-highlight transition-colors duration-200 px-3 py-2 text-sm font-medium">
-                  SHOP <ChevronDown className="ml-1 h-3 w-3" />
-                </Button>
-                <Button variant="ghost" className="text-text-gray hover:text-highlight transition-colors duration-200 px-3 py-2 text-sm font-medium">
-                  COLLECTION <ChevronDown className="ml-1 h-3 w-3" />
-                </Button>
-                <Button variant="ghost" className="text-text-gray hover:text-highlight transition-colors duration-200 px-3 py-2 text-sm font-medium">
-                  BLOG <ChevronDown className="ml-1 h-3 w-3" />
-                </Button>
-                <Button variant="ghost" className="text-text-gray hover:text-highlight transition-colors duration-200 px-3 py-2 text-sm font-medium">
-                  PAGES <ChevronDown className="ml-1 h-3 w-3" />
-                </Button>
-                <Button variant="ghost" className="text-text-gray hover:text-highlight transition-colors duration-200 px-3 py-2 text-sm font-medium">
-                  ELEMENTORS <ChevronDown className="ml-1 h-3 w-3" />
-                </Button>
-                <Button variant="ghost" className="text-highlight hover:text-primary transition-colors duration-200 px-3 py-2 text-sm font-medium">
-                  SALE
-                </Button>
-              </div>
-            </div>
-
-            {/* Right Icons */}
-            <div className="flex items-center space-x-4">
-              <Button variant="ghost" size="icon" className="text-text-gray hover:text-highlight transition-colors duration-200">
+            <div className="flex space-x-4 text-white">
+              <button className="hover:text-gray-300">
                 <Search className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="text-text-gray hover:text-highlight transition-colors duration-200">
+              </button>
+              <button className="hover:text-gray-300">
                 <Heart className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="text-text-gray hover:text-highlight transition-colors duration-200">
+              </button>
+              <button className="hover:text-gray-300">
                 <User className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="text-text-gray hover:text-highlight transition-colors duration-200 relative">
+              </button>
+              <button className="hover:text-gray-300 relative">
                 <ShoppingBag className="h-5 w-5" />
-                <span className="absolute -top-2 -right-2 bg-highlight text-secondary text-xs rounded-full h-5 w-5 flex items-center justify-center">3</span>
-              </Button>
-              
-              {/* Mobile menu button */}
-              <Button 
-                variant="ghost" 
-                size="icon" 
-                className="md:hidden text-text-gray hover:text-highlight"
-                onClick={() => setIsMobileMenuOpen(true)}
-              >
-                <Menu className="h-5 w-5" />
-              </Button>
+                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+              </button>
             </div>
           </div>
         </nav>
