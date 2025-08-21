@@ -1,0 +1,88 @@
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Send } from "lucide-react";
+
+export default function Footer() {
+  return (
+    <footer className="bg-primary text-secondary py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Company Info */}
+          <div>
+            <h3 className="text-2xl font-bold mb-6 tracking-wider">ZENNY</h3>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              Premium luxury watches and timepieces. Experience the finest craftsmanship and elegant designs.
+            </p>
+            <div className="flex space-x-4">
+              <Button variant="ghost" size="icon" className="text-gray-300 hover:text-secondary transition-colors duration-200">
+                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </Button>
+              <Button variant="ghost" size="icon" className="text-gray-300 hover:text-secondary transition-colors duration-200">
+                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                </svg>
+              </Button>
+              <Button variant="ghost" size="icon" className="text-gray-300 hover:text-secondary transition-colors duration-200">
+                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.004 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.328-1.297L6.77 14.04c.636.749 1.568 1.217 2.607 1.217 1.916 0 3.47-1.554 3.47-3.47s-1.554-3.47-3.47-3.47c-1.039 0-1.97.468-2.607 1.217L5.121 7.883c.88-.808 2.031-1.297 3.328-1.297 2.726 0 4.939 2.213 4.939 4.939s-2.213 4.939-4.939 4.939z"/>
+                </svg>
+              </Button>
+              <Button variant="ghost" size="icon" className="text-gray-300 hover:text-secondary transition-colors duration-200">
+                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+              </Button>
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
+            <ul className="space-y-3">
+              <li><Link to="/about" className="text-gray-300 hover:text-secondary transition-colors duration-200">About Us</Link></li>
+              <li><Link to="/shop" className="text-gray-300 hover:text-secondary transition-colors duration-200">Shop</Link></li>
+              <li><Link to="/collections" className="text-gray-300 hover:text-secondary transition-colors duration-200">Collections</Link></li>
+              <li><Link to="/blog" className="text-gray-300 hover:text-secondary transition-colors duration-200">Blog</Link></li>
+              <li><Link to="/contact" className="text-gray-300 hover:text-secondary transition-colors duration-200">Contact</Link></li>
+            </ul>
+          </div>
+
+          {/* Customer Service */}
+          <div>
+            <h4 className="text-lg font-semibold mb-6">Customer Service</h4>
+            <ul className="space-y-3">
+              <li><Link to="/size-guide" className="text-gray-300 hover:text-secondary transition-colors duration-200">Size Guide</Link></li>
+              <li><Link to="/shipping" className="text-gray-300 hover:text-secondary transition-colors duration-200">Shipping Info</Link></li>
+              <li><Link to="/returns" className="text-gray-300 hover:text-secondary transition-colors duration-200">Returns</Link></li>
+              <li><Link to="/privacy" className="text-gray-300 hover:text-secondary transition-colors duration-200">Privacy Policy</Link></li>
+              <li><Link to="/terms" className="text-gray-300 hover:text-secondary transition-colors duration-200">Terms & Conditions</Link></li>
+            </ul>
+          </div>
+
+          {/* Newsletter */}
+          <div>
+            <h4 className="text-lg font-semibold mb-6">Newsletter</h4>
+            <p className="text-gray-300 mb-4">Subscribe to get updates on new collections and exclusive offers.</p>
+            <div className="flex">
+              <Input 
+                type="email" 
+                placeholder="Your email" 
+                className="flex-1 bg-gray-800 text-secondary border-gray-700 rounded-r-none focus:border-highlight"
+              />
+              <Button className="bg-highlight hover:bg-highlight/80 text-secondary rounded-l-none">
+                <Send className="h-4 w-4" />
+              </Button>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-gray-800 mt-12 pt-8 text-center">
+          <p className="text-gray-400">&copy; 2024 ZENNY. All rights reserved. | Designed with luxury in mind.</p>
+        </div>
+      </div>
+    </footer>
+  );
+}

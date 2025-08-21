@@ -1,0 +1,787 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZENNY - Luxury Watch Collection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: '#000000',
+                    secondary: '#FFFFFF', 
+                    accent: '#F5F5F5',
+                    textGray: '#333333',
+                    highlight: '#FF6B6B'
+                },
+                fontFamily: {
+                    sans: ['Inter', 'system-ui', 'sans-serif']
+                }
+            }
+        }
+    };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="font-sans text-textGray bg-secondary">
+
+<!-- @COMPONENT: Header -->
+<header class="bg-secondary border-b border-gray-100 sticky top-0 z-50">
+    <!-- Top Banner -->
+    <div class="bg-highlight text-secondary text-center py-2 px-4">
+        <div class="flex items-center justify-between max-w-7xl mx-auto">
+            <div class="flex items-center space-x-4 text-sm">
+                <span><i class="fas fa-phone mr-1"></i>+855-123-4547</span>
+                <span><i class="fas fa-envelope mr-1"></i>contact@example.com</span>
+            </div>
+            <div class="text-sm font-medium">
+                Summer discount of 70%. SHOP NOW
+            </div>
+            <div class="flex items-center space-x-4 text-sm">
+                <span>English <i class="fas fa-chevron-down ml-1"></i></span>
+                <span>USD <i class="fas fa-chevron-down ml-1"></i></span>
+                <span>Need Help?</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <h1 class="text-2xl font-bold text-primary tracking-wider">ZENNY</h1>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-8">
+                    <a href="#" class="text-primary hover:text-highlight transition-colors duration-200 px-3 py-2 text-sm font-medium">HOME <i class="fas fa-chevron-down ml-1"></i></a>
+                    <a href="#" class="text-textGray hover:text-highlight transition-colors duration-200 px-3 py-2 text-sm font-medium">SHOP <i class="fas fa-chevron-down ml-1"></i></a>
+                    <a href="#" class="text-textGray hover:text-highlight transition-colors duration-200 px-3 py-2 text-sm font-medium">COLLECTION <i class="fas fa-chevron-down ml-1"></i></a>
+                    <a href="#" class="text-textGray hover:text-highlight transition-colors duration-200 px-3 py-2 text-sm font-medium">BLOG <i class="fas fa-chevron-down ml-1"></i></a>
+                    <a href="#" class="text-textGray hover:text-highlight transition-colors duration-200 px-3 py-2 text-sm font-medium">PAGES <i class="fas fa-chevron-down ml-1"></i></a>
+                    <a href="#" class="text-textGray hover:text-highlight transition-colors duration-200 px-3 py-2 text-sm font-medium">ELEMENTORS <i class="fas fa-chevron-down ml-1"></i></a>
+                    <a href="#" class="text-highlight hover:text-primary transition-colors duration-200 px-3 py-2 text-sm font-medium">SALE</a>
+                </div>
+            </div>
+
+            <!-- Right Icons -->
+            <div class="flex items-center space-x-4">
+                <button class="text-textGray hover:text-highlight transition-colors duration-200">
+                    <i class="fas fa-search text-lg"></i>
+                </button>
+                <button class="text-textGray hover:text-highlight transition-colors duration-200">
+                    <i class="fas fa-heart text-lg"></i>
+                </button>
+                <button class="text-textGray hover:text-highlight transition-colors duration-200">
+                    <i class="fas fa-user text-lg"></i>
+                </button>
+                <button class="text-textGray hover:text-highlight transition-colors duration-200 relative">
+                    <i class="fas fa-shopping-bag text-lg"></i>
+                    <span class="absolute -top-2 -right-2 bg-highlight text-secondary text-xs rounded-full h-5 w-5 flex items-center justify-center">3</span>
+                </button>
+                
+                <!-- Mobile menu button -->
+                <button class="md:hidden text-textGray hover:text-highlight">
+                    <i class="fas fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- @END_COMPONENT: Header -->
+
+<!-- @COMPONENT: Hero Section -->
+<section class="relative bg-black min-h-screen flex items-center">
+    <!-- Hero background with luxury watch -->
+    <div class="absolute inset-0 overflow-hidden">
+        <!-- Luxury watch showcase background with warm bokeh lighting -->
+        <div class="w-full h-full bg-gradient-to-br from-amber-900/20 via-black to-black flex items-center justify-center">
+            <div class="relative">
+                <!-- Watch image would go here - using CSS to create a luxury feel -->
+                <div class="w-96 h-96 rounded-full bg-gradient-to-br from-amber-600/30 to-amber-900/30 blur-3xl absolute inset-0"></div>
+                <div class="w-80 h-80 rounded-full bg-gradient-to-br from-amber-500/20 to-amber-700/20 blur-2xl absolute inset-8"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            <!-- Left Content -->
+            <div class="text-secondary">
+                <div class="mb-4">
+                    <span class="text-sm font-medium tracking-wider uppercase text-amber-400">Audemars Piguet</span>
+                </div>
+                <h1 class="text-5xl lg:text-6xl font-light leading-tight mb-6">
+                    Royal Oak<br/>
+                    <span class="font-semibold">Collection</span>
+                </h1>
+                <p class="text-lg text-gray-300 mb-8 leading-relaxed max-w-md">
+                    The collection is powered by finely finished mechanical movements, showcasing both technical excellence and avant-garde style.
+                </p>
+                <button class="bg-transparent border border-secondary text-secondary px-8 py-3 hover:bg-secondary hover:text-primary transition-all duration-300 text-sm font-medium tracking-wide uppercase">
+                    Shop Now
+                </button>
+            </div>
+
+            <!-- Right Content - Watch Image Placeholder -->
+            <div class="flex justify-center lg:justify-end">
+                <!-- Luxury watch with premium blue dial and golden accents -->
+                <div class="relative">
+                    <!-- Main watch representation -->
+                    <div class="w-80 h-80 rounded-full bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 shadow-2xl relative overflow-hidden">
+                        <!-- Watch bezel -->
+                        <div class="absolute inset-4 rounded-full bg-gradient-to-br from-amber-400 via-amber-500 to-amber-600 shadow-inner">
+                            <!-- Watch face -->
+                            <div class="absolute inset-2 rounded-full bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 flex items-center justify-center">
+                                <!-- Watch markers -->
+                                <div class="absolute inset-6 rounded-full border-2 border-amber-300/30">
+                                    <!-- 12 o'clock marker -->
+                                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 h-6 bg-amber-300"></div>
+                                    <!-- 3 o'clock marker -->
+                                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 h-1 w-6 bg-amber-300"></div>
+                                    <!-- 6 o'clock marker -->
+                                    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-6 bg-amber-300"></div>
+                                    <!-- 9 o'clock marker -->
+                                    <div class="absolute left-0 top-1/2 transform -translate-y-1/2 h-1 w-6 bg-amber-300"></div>
+                                </div>
+                                <!-- Watch hands -->
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <div class="w-0.5 h-16 bg-amber-300 absolute origin-bottom transform rotate-45"></div>
+                                    <div class="w-0.5 h-12 bg-amber-300 absolute origin-bottom transform rotate-90"></div>
+                                    <div class="w-2 h-2 bg-amber-300 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Lighting effects -->
+                    <div class="absolute -inset-4 bg-gradient-to-br from-amber-400/20 to-transparent rounded-full blur-xl"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- @END_COMPONENT: Hero Section -->
+
+<!-- @COMPONENT: Brand Logos Section -->
+<section class="py-16 bg-secondary">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 items-center opacity-60">
+            <!-- Brand logos would be here - using text representations -->
+            <div class="text-center">
+                <span class="text-2xl font-light text-textGray">angle</span>
+            </div>
+            <div class="text-center">
+                <span class="text-2xl font-bold text-textGray">visko</span>
+            </div>
+            <div class="text-center">
+                <span class="text-2xl font-bold text-textGray tracking-wider">NEXAR</span>
+            </div>
+            <div class="text-center">
+                <span class="text-2xl font-light text-textGray">mosvolk</span>
+            </div>
+            <div class="text-center">
+                <span class="text-2xl font-bold text-textGray">heymo</span>
+            </div>
+            <div class="text-center">
+                <span class="text-2xl font-bold text-textGray">dreams</span>
+            </div>
+            <div class="text-center">
+                <span class="text-2xl font-light text-textGray">Rockorn</span>
+            </div>
+            <div class="text-center">
+                <span class="text-2xl font-light text-textGray">vanilla</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- @END_COMPONENT: Brand Logos Section -->
+
+<!-- @COMPONENT: Shop By Categories -->
+<section class="py-20 bg-secondary">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-light text-primary mb-4">Shop By Categories</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Men's Watches -->
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden rounded-lg bg-accent">
+                    <!-- Elegant men's watch with dark leather strap on a sophisticated dark background -->
+                    <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" alt="Men's Watches Collection" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300" />
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300"></div>
+                </div>
+                <div class="text-center mt-4">
+                    <h3 class="text-xl font-medium text-primary">Men's Watches</h3>
+                </div>
+            </div>
+
+            <!-- Women's Watches -->
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden rounded-lg bg-accent">
+                    <!-- Elegant women's watch with rose gold accents on silk fabric -->
+                    <img src="https://pixabay.com/get/g3d4a24dcdbd698608d33b937099b39053896aa6b05ca3d4774cd9b3423b3c35a2aaf1eab19bdb2387f403b465f1cd081788aaa7186c260c9f498dbb337fbcd8d_1280.jpg" alt="Women's Watches Collection" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300" />
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300"></div>
+                </div>
+                <div class="text-center mt-4">
+                    <h3 class="text-xl font-medium text-primary">Women's Watches</h3>
+                </div>
+            </div>
+
+            <!-- Pre-Owned Watches -->
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden rounded-lg bg-accent">
+                    <!-- Vintage luxury watch with leather accessories on wooden surface -->
+                    <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" alt="Pre-Owned Watches Collection" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300" />
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300"></div>
+                </div>
+                <div class="text-center mt-4">
+                    <h3 class="text-xl font-medium text-primary">Pre-Owned Watches</h3>
+                </div>
+            </div>
+
+            <!-- Pocket Watches -->
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden rounded-lg bg-accent">
+                    <!-- Classic pocket watch with chain on vintage leather background -->
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" alt="Pocket Watches Collection" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300" />
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300"></div>
+                </div>
+                <div class="text-center mt-4">
+                    <h3 class="text-xl font-medium text-primary">Pocket Watches</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- @END_COMPONENT: Shop By Categories -->
+
+<!-- @COMPONENT: New Arrival Collection -->
+<section class="py-20 bg-accent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-light text-primary mb-4">New Arrival Collection</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Product 1 -->
+            <div class="bg-secondary rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 group">
+                <div class="relative overflow-hidden rounded-t-lg">
+                    <!-- Vintage black watch with leather strap -->
+                    <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400" alt="Vintage Gold Wristwatch" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" />
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-highlight text-secondary px-2 py-1 text-xs font-medium rounded">-10%</span>
+                    </div>
+                    <div class="absolute top-4 right-4">
+                        <button class="text-textGray hover:text-highlight transition-colors duration-200">
+                            <i class="far fa-heart text-lg"></i>
+                        </button>
+                    </div>
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-primary text-secondary px-2 py-1 text-xs font-medium tracking-wider">RADIANT</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-medium text-primary mb-2">Vintage Gold Wristwatch</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-sm text-gray-500 line-through">$220.00</span>
+                        <span class="text-lg font-semibold text-primary">$199.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-secondary rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 group">
+                <div class="relative overflow-hidden rounded-t-lg">
+                    <!-- Luxury green dial watch with brown leather strap -->
+                    <img src="https://images.unsplash.com/photo-1594534475808-b18fc33b045e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400" alt="Heritage Automatic Watch" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" />
+                    <div class="absolute top-4 right-4">
+                        <button class="text-textGray hover:text-highlight transition-colors duration-200">
+                            <i class="far fa-heart text-lg"></i>
+                        </button>
+                    </div>
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-primary text-secondary px-2 py-1 text-xs font-medium tracking-wider">LIGNESS</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-medium text-primary mb-2">Heritage Automatic Watch</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-lg font-semibold text-primary">$86.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="bg-secondary rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 group">
+                <div class="relative overflow-hidden rounded-t-lg">
+                    <!-- Blue dial luxury watch with silver bracelet -->
+                    <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400" alt="Patek Philippe Nautilus" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" />
+                    <div class="absolute top-4 right-4">
+                        <button class="text-textGray hover:text-highlight transition-colors duration-200">
+                            <i class="far fa-heart text-lg"></i>
+                        </button>
+                    </div>
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-primary text-secondary px-2 py-1 text-xs font-medium tracking-wider">ARINETE</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-medium text-primary mb-2">Patek Philippe Nautilus</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-lg font-semibold text-primary">$75.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="bg-secondary rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 group">
+                <div class="relative overflow-hidden rounded-t-lg">
+                    <!-- Silver luxury watch with blue dial and metal bracelet -->
+                    <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400" alt="Audemars Piguet Royal" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" />
+                    <div class="absolute top-4 right-4">
+                        <button class="text-textGray hover:text-highlight transition-colors duration-200">
+                            <i class="far fa-heart text-lg"></i>
+                        </button>
+                    </div>
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-primary text-secondary px-2 py-1 text-xs font-medium tracking-wider">COSTA</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-medium text-primary mb-2">Audemars Piguet Royal</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-lg font-semibold text-primary">$89.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- @END_COMPONENT: New Arrival Collection -->
+
+<!-- @COMPONENT: Statistics Section -->
+<section class="py-20 bg-black relative overflow-hidden">
+    <!-- Background pattern -->
+    <div class="absolute inset-0">
+        <div class="absolute inset-0 bg-gradient-to-br from-amber-900/10 to-transparent"></div>
+        <div class="absolute top-10 left-10 w-32 h-32 bg-amber-400/5 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-10 right-10 w-48 h-48 bg-amber-500/5 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-amber-600/5 rounded-full blur-3xl"></div>
+    </div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+            <!-- Stat 1 -->
+            <div class="text-secondary">
+                <div class="text-5xl font-light mb-2 text-amber-400">25K+</div>
+                <div class="text-lg text-gray-300">Satisfied Clients</div>
+            </div>
+            
+            <!-- Stat 2 -->
+            <div class="text-secondary">
+                <div class="text-5xl font-light mb-2 text-amber-400">36k+</div>
+                <div class="text-lg text-gray-300">Products Sold</div>
+            </div>
+            
+            <!-- Stat 3 -->
+            <div class="text-secondary">
+                <div class="text-5xl font-light mb-2 text-amber-400">15+</div>
+                <div class="text-lg text-gray-300">Years Experience</div>
+            </div>
+            
+            <!-- Stat 4 -->
+            <div class="text-secondary">
+                <div class="text-5xl font-light mb-2 text-amber-400">100+</div>
+                <div class="text-lg text-gray-300">Awards Winning</div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- @END_COMPONENT: Statistics Section -->
+
+<!-- @COMPONENT: Most Popular Models -->
+<section class="py-20 bg-secondary">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-light text-primary mb-4">Most Popular Models</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Popular Product 1 -->
+            <div class="bg-accent rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 group">
+                <div class="relative overflow-hidden rounded-t-lg">
+                    <!-- Black chronograph watch with sleek design -->
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400" alt="Luxury Heritage Automatic Steel" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" />
+                    <div class="absolute top-4 right-4">
+                        <button class="text-textGray hover:text-highlight transition-colors duration-200">
+                            <i class="far fa-heart text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="text-xs text-gray-500 mb-1 tracking-wider">COSTA</div>
+                    <h3 class="text-lg font-medium text-primary mb-2">Luxury Heritage Automatic Steel</h3>
+                    <div class="text-lg font-semibold text-primary">$178.00</div>
+                </div>
+            </div>
+
+            <!-- Popular Product 2 -->
+            <div class="bg-accent rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 group">
+                <div class="relative overflow-hidden rounded-t-lg">
+                    <!-- Classic brown leather watch with silver case -->
+                    <img src="https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400" alt="Eternal Classic Timepiece" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" />
+                    <div class="absolute top-4 right-4">
+                        <button class="text-textGray hover:text-highlight transition-colors duration-200">
+                            <i class="far fa-heart text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="text-xs text-gray-500 mb-1 tracking-wider">JAMIROQUAI</div>
+                    <h3 class="text-lg font-medium text-primary mb-2">Eternal Classic Timepiece</h3>
+                    <div class="text-lg font-semibold text-primary">$78.00</div>
+                </div>
+            </div>
+
+            <!-- Popular Product 3 -->
+            <div class="bg-accent rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 group">
+                <div class="relative overflow-hidden rounded-t-lg">
+                    <!-- Gold and silver two-tone luxury watch -->
+                    <img src="https://pixabay.com/get/g4c4c17b7a335967571f1e1971fcbadfd633c16064f6690a4159819640c7a041697a5cd28575a05594590e5ff141f806a0f7f82f944e7cb7f2e5ee04ab7f725df_1280.jpg" alt="Precision Elite Chronograph" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" />
+                    <div class="absolute top-4 right-4">
+                        <button class="text-textGray hover:text-highlight transition-colors duration-200">
+                            <i class="far fa-heart text-lg"></i>
+                        </button>
+                    </div>
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-highlight text-secondary px-2 py-1 text-xs font-medium rounded">-13%</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="text-xs text-gray-500 mb-1 tracking-wider">ARINETE</div>
+                    <h3 class="text-lg font-medium text-primary mb-2">Precision Elite Chronograph</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-sm text-gray-500 line-through">$192.00</span>
+                        <span class="text-lg font-semibold text-primary">$168.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Popular Product 4 -->
+            <div class="bg-accent rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 group">
+                <div class="relative overflow-hidden rounded-t-lg">
+                    <!-- Premium blue dial watch with white rubber strap -->
+                    <img src="https://pixabay.com/get/g20f11265d1b163644ba787c877ab375fae81bfe75f53ebe31a6bd92a0db2f2019238689f2144b0ccf262af7c6b5c10e3eff5816db9b9b01731ebef335be22c84_1280.jpg" alt="Tag Heuer Carrera Chrono" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" />
+                    <div class="absolute top-4 right-4">
+                        <button class="text-textGray hover:text-highlight transition-colors duration-200">
+                            <i class="far fa-heart text-lg"></i>
+                        </button>
+                    </div>
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-primary text-secondary px-2 py-1 text-xs font-medium rounded">-4%</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="text-xs text-gray-500 mb-1 tracking-wider">LIGNESS</div>
+                    <h3 class="text-lg font-medium text-primary mb-2">Tag Heuer Carrera Chrono</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-sm text-gray-500 line-through">$196.00</span>
+                        <span class="text-lg font-semibold text-primary">$189.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- @END_COMPONENT: Most Popular Models -->
+
+<!-- @COMPONENT: Customer Reviews -->
+<section class="py-20 bg-accent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Review 1 -->
+            <div class="bg-secondary p-6 rounded-lg shadow-sm">
+                <div class="flex items-center mb-4">
+                    <div class="flex text-amber-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <p class="text-textGray mb-4 leading-relaxed">
+                    I've been a customer at Zenny for over five years, and they never disappoint! The selection of frames is fantastic, catering to all ages and preferences. The staff is always friendly and knowledgeable, helping me choose the perfect pair of glasses each time.
+                </p>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="bg-secondary p-6 rounded-lg shadow-sm">
+                <div class="flex items-center mb-4">
+                    <div class="flex text-amber-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <p class="text-textGray mb-4 leading-relaxed">
+                    I had an excellent experience with Zenny. The in-store eye exam was thorough and the optometrist provided helpful recommendations for my new glasses. I chose a pair of high-quality frames that absolutely love.
+                </p>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="bg-secondary p-6 rounded-lg shadow-sm">
+                <div class="flex items-center mb-4">
+                    <div class="flex text-amber-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <p class="text-textGray mb-4 leading-relaxed">
+                    As someone who prefers online shopping, Zenny made the process seamless and enjoyable. Their website is easy to navigate and the virtual try-on tool helped me find the perfect frames without leaving my home.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Watch Hero Image -->
+        <div class="mt-16 relative">
+            <!-- Luxury watch closeup with beautiful lighting and premium details -->
+            <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=600" alt="Luxury watch collection showcase" class="w-full h-96 object-cover rounded-xl shadow-lg" />
+            <div class="absolute inset-0 bg-black/40 rounded-xl flex items-center justify-center">
+                <div class="text-center text-secondary">
+                    <h3 class="text-3xl font-light mb-4">STYLE AND SERENITY</h3>
+                    <p class="text-lg mb-6 max-w-md">
+                        With a sharp-edged, sophisticated design and the first-class course to anti-trenched, uncovered clamps enriching.
+                    </p>
+                    <button class="bg-transparent border border-secondary text-secondary px-8 py-3 hover:bg-secondary hover:text-primary transition-all duration-300 text-sm font-medium tracking-wide uppercase">
+                        Explore Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- @END_COMPONENT: Customer Reviews -->
+
+<!-- @COMPONENT: News and Perspectives -->
+<section class="py-20 bg-secondary">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-light text-primary mb-4">News and Perspectives</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Featured Article -->
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden rounded-lg">
+                    <!-- Person working on laptop with luxury watch visible on wrist -->
+                    <img src="https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500" alt="The Best Watches for Every Occasion" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300" />
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-8">
+                        <div class="mb-2">
+                            <span class="bg-highlight text-secondary px-3 py-1 text-xs font-medium rounded">Watches</span>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-secondary mb-2">The Best Watches for Every Occasion</h3>
+                        <p class="text-gray-300 text-sm mb-2">August 8, 2024</p>
+                        <p class="text-gray-300 leading-relaxed">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Side Articles -->
+            <div class="space-y-6">
+                <!-- Article 1 -->
+                <div class="flex gap-4 group cursor-pointer">
+                    <div class="flex-shrink-0">
+                        <!-- Professional businessman with glasses working on laptop -->
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" alt="Eye on Style: Glasses and Fashion" class="w-32 h-24 object-cover rounded group-hover:scale-105 transition-transform duration-300" />
+                    </div>
+                    <div class="flex-1">
+                        <div class="mb-2">
+                            <span class="bg-highlight text-secondary px-2 py-1 text-xs font-medium rounded">News Watches</span>
+                        </div>
+                        <h4 class="text-lg font-medium text-primary mb-1 group-hover:text-highlight transition-colors duration-200">Eye on Style: Glasses and Fashion</h4>
+                        <p class="text-sm text-gray-500 mb-1">July 31, 2023</p>
+                        <p class="text-sm text-textGray">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="flex gap-4 group cursor-pointer">
+                    <div class="flex-shrink-0">
+                        <!-- Person wearing red clothing working with laptop and luxury watch -->
+                        <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200" alt="Top Luxury Watch Brands You Should Know" class="w-32 h-24 object-cover rounded group-hover:scale-105 transition-transform duration-300" />
+                    </div>
+                    <div class="flex-1">
+                        <div class="mb-2">
+                            <span class="bg-highlight text-secondary px-2 py-1 text-xs font-medium rounded">Watches</span>
+                        </div>
+                        <h4 class="text-lg font-medium text-primary mb-1 group-hover:text-highlight transition-colors duration-200">Top Luxury Watch Brands You Should Know</h4>
+                        <p class="text-sm text-gray-500 mb-1">August 8, 2024</p>
+                        <p class="text-sm text-textGray">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- @END_COMPONENT: News and Perspectives -->
+
+<!-- @COMPONENT: Footer -->
+<footer class="bg-primary text-secondary py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Company Info -->
+            <div>
+                <h3 class="text-2xl font-bold mb-6 tracking-wider">ZENNY</h3>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Premium luxury watches and timepieces. Experience the finest craftsmanship and elegant designs.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-300 hover:text-secondary transition-colors duration-200">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-secondary transition-colors duration-200">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-secondary transition-colors duration-200">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-secondary transition-colors duration-200">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-gray-300 hover:text-secondary transition-colors duration-200">About Us</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-secondary transition-colors duration-200">Shop</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-secondary transition-colors duration-200">Collections</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-secondary transition-colors duration-200">Blog</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-secondary transition-colors duration-200">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Customer Service -->
+            <div>
+                <h4 class="text-lg font-semibold mb-6">Customer Service</h4>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-gray-300 hover:text-secondary transition-colors duration-200">Size Guide</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-secondary transition-colors duration-200">Shipping Info</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-secondary transition-colors duration-200">Returns</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-secondary transition-colors duration-200">Privacy Policy</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-secondary transition-colors duration-200">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div>
+                <h4 class="text-lg font-semibold mb-6">Newsletter</h4>
+                <p class="text-gray-300 mb-4">Subscribe to get updates on new collections and exclusive offers.</p>
+                <div class="flex">
+                    <input type="email" placeholder="Your email" class="flex-1 px-4 py-2 bg-gray-800 text-secondary border border-gray-700 rounded-l focus:outline-none focus:border-highlight" data-mock="true" />
+                    <button class="bg-highlight hover:bg-highlight/80 text-secondary px-6 py-2 rounded-r transition-colors duration-200">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+            <p class="text-gray-400">&copy; 2024 ZENNY. All rights reserved. | Designed with luxury in mind.</p>
+        </div>
+    </div>
+</footer>
+<!-- @END_COMPONENT: Footer -->
+
+<script>
+(function() {
+    // TODO: Implement business logic, API calls, or state management
+    
+    // Mobile menu functionality
+    const mobileMenuButton = document.querySelector('[data-mobile-menu]');
+    const mobileMenu = document.querySelector('[data-mobile-menu-content]');
+    
+    // Product interactions
+    const productCards = document.querySelectorAll('[data-product-card]');
+    const wishlistButtons = document.querySelectorAll('[data-wishlist]');
+    
+    // Newsletter subscription
+    const newsletterForm = document.querySelector('[data-newsletter-form]');
+    
+    // Smooth scroll behavior for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+    
+    // Product card hover effects
+    productCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            // TODO: Add product quick view functionality
+        });
+    });
+    
+    // Wishlist functionality
+    wishlistButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.stopPropagation();
+            // TODO: Implement wishlist toggle functionality
+            const icon = this.querySelector('i');
+            if (icon.classList.contains('far')) {
+                icon.classList.remove('far');
+                icon.classList.add('fas');
+            } else {
+                icon.classList.remove('fas');
+                icon.classList.add('far');
+            }
+        });
+    });
+    
+    // Statistics counter animation on scroll
+    const stats = document.querySelectorAll('[data-stat-number]');
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+    };
+    
+    const statsObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // TODO: Implement counter animation
+                statsObserver.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+    
+    stats.forEach(stat => {
+        statsObserver.observe(stat);
+    });
+})();
+</script>
+
+</body>
+</html>
