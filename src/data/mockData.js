@@ -5,29 +5,58 @@ export const categories = [
     name: "Men's Watches",
     slug: "mens-watches",
     description: "Luxury timepieces for men",
-    image: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400"
+    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/h7-cat1.jpg"
   },
   {
     id: "2",
     name: "Women's Watches",
     slug: "womens-watches",
     description: "Elegant watches for women",
-    image: "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400"
+    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/h7-cat2.jpg"
   },
   {
     id: "3",
     name: "Pre-Owned Watches",
     slug: "pre-owned-watches",
     description: "Certified pre-owned luxury watches",
-    image: "https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400"
+    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/h7-cat3.jpg"
   },
   {
     id: "4",
     name: "Pocket Watches",
     slug: "pocket-watches",
     description: "Classic vintage pocket watches",
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400"
-  }
+    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/h7-cat4.jpg"
+  },
+    {
+    id: "5",
+    name: "Automatic Watches",
+    slug: "automatic-watches",
+    description: "This is autommatic watch",
+    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/h7-cat5.jpg"
+  },
+    {
+    id: "6",
+    name: "Calendar Watches",
+    slug: "calendar-watches",
+    description: "This is calendar watch",
+    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/h7-cat6.jpg"
+  },
+    {
+    id: "7",
+    name: "Gold Watches",
+    slug: "gold-watches",
+    description: "This is gold watch",
+    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/h7-cat7.jpg"
+  },
+    {
+    id: "8",
+    name: "Diving Watches",
+    slug: "diving-watches",
+    description: "This is diving watch",
+    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/h7-cat8.jpg"
+  },
+  
 ];
 
 export const products = [
