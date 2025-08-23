@@ -72,8 +72,9 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="text-white">
           <div className="max-w-2xl">
-            <h1 
-              className={`text-5xl lg:text-7xl font-bold leading-tight mb-6 transition-all duration-1000 ease-in-out ${
+            <h1
+            style={{fontFamily:'libre baskerville'}} 
+              className={`text-5xl lg:text-6xl font-bold leading-tight mb-6 transition-all duration-1000 ease-in-out ${
                 isAnimating 
                   ? 'opacity-0 translate-y-[-100px]' 
                   : 'opacity-100 translate-y-0'
