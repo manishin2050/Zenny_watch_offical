@@ -219,7 +219,7 @@ export const blogPosts = [
     slug: "best-watches-every-occasion",
     excerpt: "Lorem Ipsum is simply dummy text of the printing and typesetting",
     content: "Detailed guide on choosing the perfect watch for different occasions...",
-    image: "https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
+    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/w-blog2.jpg",
     category: "Watches",
     publishedAt: new Date('2024-08-08'),
     isFeatured: true
@@ -230,7 +230,7 @@ export const blogPosts = [
     slug: "eye-on-style-glasses-fashion",
     excerpt: "Lorem Ipsum is simply dummy text of the printing and typesetting",
     content: "Exploring the intersection of eyewear and fashion trends...",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200",
+    image: "https://zenny.bzotech.com/wp-content/uploads/2023/07/blog-13-1.jpg",
     category: "News Watches",
     publishedAt: new Date('2023-07-31')
   },
@@ -240,7 +240,7 @@ export const blogPosts = [
     slug: "top-luxury-watch-brands",
     excerpt: "Lorem Ipsum is simply dummy text of the printing and typesetting",
     content: "Comprehensive guide to the most prestigious watch manufacturers...",
-    image: "https://images.unsplash.com/photo-1524805444758-089113d48a6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=200",
+    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/w-blog1.jpg",
     category: "Watches",
     publishedAt: new Date('2024-08-08')
   }
