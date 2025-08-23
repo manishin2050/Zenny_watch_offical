@@ -26,12 +26,12 @@ export default function YouTubeVideo() {
               style={{ transform: isAnimating ? 'translateY(0)' : 'translateY(60px)', opacity: isAnimating ? 1 : 0 }}>
             NEW ARRIVAL
           </h3>
-          <h2 className="text-2xl  font-[Libre-Baskerville]  md:text-4xl font-bold  transition-all duration-1000 ease-in-out delay-200"
-              style={{ transform: isAnimating ? 'translateY(0)' : 'translateY(60px)', opacity: isAnimating ? 1 : 0 }}>
+          <h2  className="text-2xl    md:text-4xl font-bold  transition-all duration-1000 ease-in-out delay-200"
+              style={{fontFamily:'libre baskerville', transform: isAnimating ? 'translateY(0)' : 'translateY(60px)', opacity: isAnimating ? 1 : 0 }}>
             Tag Heuer Carrera
           </h2>
-          <p className="text-2xl font-[Libre-Baskerville]  md:text-4xl font-bold mb-6 transition-all duration-1000 ease-in-out delay-300"
-             style={{ transform: isAnimating ? 'translateY(0)' : 'translateY(60px)', opacity: isAnimating ? 1 : 0 }}>
+          <p  className="text-2xl   md:text-3xl font-bold mb-6 transition-all duration-1000 ease-in-out delay-300"
+             style={{fontFamily:'libre baskerville', transform: isAnimating ? 'translateY(0)' : 'translateY(60px)', opacity: isAnimating ? 1 : 0 }}>
             Calibre Day-Date Chronograph
           </p>
           <Button 

@@ -251,7 +251,7 @@ export const reviews = [
     id: "1",
     customerName: "Kristin Watson",
     customerTitle: "Teacher",
-    content: "I've been a customer at Zenny for over five years, and they never disappoint! The selection of frames is fantastic, catering to all ages and preferences. The staff is always friendly and knowledgeable, helping me choose the perfect pair of glasses every time.",
+    content: "I've been a customer at Zenny for over five years, and they never disappoint! The selection of frames is fantastic, catering to all ages and preferences. The staff is always , helping me choose the perfect pair of glasses every time.",
     rating: 5
   },
   {

@@ -5,7 +5,7 @@ export default function Categories() {
     <section className="py-20 bg-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-semibold font-[la-regular] text-primary mb-4">Shop By Categories</h2>
+          <h2 style={{fontFamily:'libre baskerville'}} className="text-5xl font-semibold  text-primary mb-4">Shop By Categories</h2>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

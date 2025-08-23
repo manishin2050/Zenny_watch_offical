@@ -14,12 +14,12 @@ export default function CustomerReviews() {
       }}
     >
       {/* Reviews Content Container */}
-      <div className="relative z-10 min-h-[600px] backdrop-blur-sm bg-white/10">
+      <div className="relative z-10 min-h-[600px] ">
         <div className="pt-40">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
               {reviews.slice(0, 3).map((review) => (
-                <div key={review.id} className="bg-secondary p-6 rounded-lg shadow-sm backdrop-blur-sm bg-opacity-90">
+                <div key={review.id} className="bg-secondary p-2 rounded-lg shadow-sm backdrop-blur-sm bg-opacity-90">
                   <div className="flex items-center mb-4">
                     <div className="flex text-amber-400">
                       {[...Array(review.rating)].map((_, i) => (
@@ -27,14 +27,14 @@ export default function CustomerReviews() {
                       ))}
                     </div>
                   </div>
-                  <p className="text-text-gray mb-4 leading-relaxed">
+                  <p className="text-gray-900 mb-4 pb-8 font-[la-regular] leading-relaxed">
                     {review.content}
                   </p>
-                  <div className="flex items-center">
+                  <div className="flex items-center ">
                     <div className="w-10 h-10 bg-amber-400 rounded-full flex items-center justify-center text-primary font-semibold mr-3">
                       {review.customerName.charAt(0)}
                     </div>
-                    <div>
+                    <div  >
                       <div className="font-medium text-primary">{review.customerName}</div>
                       {review.customerTitle && (
                         <div className="text-sm text-text-gray">{review.customerTitle}</div>

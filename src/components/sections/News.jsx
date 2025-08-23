@@ -9,7 +9,7 @@ export default function News() {
     <section className="py-10 bg-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 ">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-semibold font-[la-regular] text-primary mb-4">News and Perspectives</h2>
+          <h2 style={{fontFamily:'libre baskerville'}} className="text-5xl font-semibold text-primary mb-4">News and Perspectives</h2>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
