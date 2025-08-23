@@ -1,8 +1,15 @@
 import { products } from "@/data/mockData";
 import ProductCard from "@/components/ui/ProductCard";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 export default function NewArrivals() {
-  const newProducts = products.filter(product => product.isNew);  
+  const newProducts = products.slice(0, 8); // Get the first 8 products
 
   return (
     <section className="py-20 bg-secondary">
@@ -11,11 +18,30 @@ export default function NewArrivals() {
           <h2 className="text-5xl font-semibold font-[Libre-Baskerville] text-primary mb-4">New Arrival Collection</h2>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <Swiper
+          modules={[Navigation, Pagination]}
+          spaceBetween={30}
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+            1024: {
+              slidesPerView: 4,
+            },
+          }}
+        >
           {newProducts.map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <SwiperSlide key={product.id}>
+              <ProductCard product={product} />
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
     </section>
   );

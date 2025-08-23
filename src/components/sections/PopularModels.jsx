@@ -2,7 +2,7 @@ import { products } from "@/data/mockData";
 import ProductCard from "@/components/ui/ProductCard";
 
 export default function PopularModels() {
-  const popularProducts = products.filter(product => product.isPopular).slice(0, 4);
+  const popularProducts = products.filter(product => product.isPopular).slice(0, 8);
 
   return (
     <section className="py-20 bg-secondary">
