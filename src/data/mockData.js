@@ -69,6 +69,7 @@ export const products = [
     price: 19900,
     originalPrice: 22000,
     image: "	https://zenny.bzotech.com/wp-content/uploads/2024/08/watch1-768x768.png",
+    secondaryImage: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch8.png",
     categoryId: "1",
     isNew: true,
     isFeatured: true
@@ -80,7 +81,8 @@ export const products = [
     brand: "LIGNESS",
     description: "Premium automatic movement timepiece",
     price: 8600,
-    image: "",
+    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch5.png",
+    secondaryImage: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch3.png",
     categoryId: "1",
     isNew: true
   },
@@ -91,7 +93,8 @@ export const products = [
     brand: "ARINETE",
     description: "Luxury sport watch with blue dial",
     price: 7500,
-    image: "",
+    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch3.png",
+    secondaryImage: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch8.png",
     categoryId: "1",
     isNew: true
   },
@@ -102,7 +105,8 @@ export const products = [
     brand: "COSTA",
     description: "Iconic luxury sports watch",
     price: 8900,
-    image: "",
+    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch4.png",
+    secondaryImage: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch2.png",
     categoryId: "1",
     isNew: true
   },
@@ -113,7 +117,8 @@ export const products = [
     brand: "COSTA",
     description: "Premium steel automatic chronograph",
     price: 17800,
-    image: "",
+    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch6.png",
+    secondaryImage: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch2.png",
     categoryId: "1",
     isPopular: true
   },
@@ -124,7 +129,8 @@ export const products = [
     brand: "JAMIROQUAI",
     description: "Timeless design with leather strap",
     price: 7800,
-    image: "",
+    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch8.png",
+    secondaryImage: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch1-768x768.png",
     categoryId: "1",
     isPopular: true
   },
@@ -136,7 +142,8 @@ export const products = [
     description: "High-precision chronograph movement",
     price: 16800,
     originalPrice: 19200,
-    image: "",
+    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch4.png",
+    secondaryImage: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch5.png",
     categoryId: "1",
     isPopular: true
   },
@@ -148,7 +155,8 @@ export const products = [
     description: "Racing-inspired chronograph watch",
     price: 18900,
     originalPrice: 19600,
-    image: "",
+    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch7.png",
+    secondaryImage: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch5.png",
     categoryId: "1",
     isPopular: true
   }
