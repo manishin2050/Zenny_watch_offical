@@ -9,6 +9,7 @@ import PopularModels from "@/components/sections/PopularModels";
 import CustomerReviews from "@/components/sections/CustomerReviews";
 import News from "@/components/sections/News";
 import YouTubeVideo from "../components/sections/YouTubeVideo";
+import Banner from "../components/sections/Banner";
 
 export default function Home() {
   return (
@@ -22,8 +23,9 @@ export default function Home() {
         <NewArrivals />
         <Statistics />
         <PopularModels />
-        <CustomerReviews />
+        <Banner />
         <News />
+        <CustomerReviews />
       </main>
       <Footer />
     </div>
