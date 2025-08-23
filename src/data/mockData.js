@@ -68,7 +68,7 @@ export const products = [
     description: "Classic vintage design with gold accents",
     price: 19900,
     originalPrice: 22000,
-    image: "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
+    image: "	https://zenny.bzotech.com/wp-content/uploads/2024/08/watch1-768x768.png",
     categoryId: "1",
     isNew: true,
     isFeatured: true
@@ -80,7 +80,7 @@ export const products = [
     brand: "LIGNESS",
     description: "Premium automatic movement timepiece",
     price: 8600,
-    image: "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
+    image: "",
     categoryId: "1",
     isNew: true
   },
@@ -91,7 +91,7 @@ export const products = [
     brand: "ARINETE",
     description: "Luxury sport watch with blue dial",
     price: 7500,
-    image: "https://images.unsplash.com/photo-1547996160-81dfa63595aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
+    image: "",
     categoryId: "1",
     isNew: true
   },
@@ -102,7 +102,7 @@ export const products = [
     brand: "COSTA",
     description: "Iconic luxury sports watch",
     price: 8900,
-    image: "https://images.unsplash.com/photo-1524805444758-089113d48a6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
+    image: "",
     categoryId: "1",
     isNew: true
   },
@@ -113,7 +113,7 @@ export const products = [
     brand: "COSTA",
     description: "Premium steel automatic chronograph",
     price: 17800,
-    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
+    image: "",
     categoryId: "1",
     isPopular: true
   },
@@ -124,7 +124,7 @@ export const products = [
     brand: "JAMIROQUAI",
     description: "Timeless design with leather strap",
     price: 7800,
-    image: "https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
+    image: "",
     categoryId: "1",
     isPopular: true
   },
@@ -136,7 +136,7 @@ export const products = [
     description: "High-precision chronograph movement",
     price: 16800,
     originalPrice: 19200,
-    image: "https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
+    image: "",
     categoryId: "1",
     isPopular: true
   },
@@ -148,7 +148,7 @@ export const products = [
     description: "Racing-inspired chronograph watch",
     price: 18900,
     originalPrice: 19600,
-    image: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
+    image: "",
     categoryId: "1",
     isPopular: true
   }

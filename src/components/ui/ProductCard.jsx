@@ -13,7 +13,7 @@ export default function ProductCard({ product, variant = "default" }) {
 
   return (
     <div className={`${variant === "accent" ? "bg-accent" : "bg-secondary"} rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 group`}>
-      <div className="relative overflow-hidden rounded-t-lg">
+      <div className="relative cursor-pointer overflow-hidden rounded-t-lg">
         <img 
           src={product.image} 
           alt={product.name} 
@@ -30,20 +30,20 @@ export default function ProductCard({ product, variant = "default" }) {
           <Button 
             variant="ghost" 
             size="icon" 
-            className="text-text-gray hover:text-highlight transition-colors duration-200"
+            className="text-text-gray hover:text-highlight transition-colors duration-200 "
           >
-            <Heart className="h-5 w-5" />
+            <Heart className="h-5 w-5" /> 
           </Button>
         </div>
-        <div className="absolute top-4 left-4">
-          <span className="bg-primary text-secondary px-2 py-1 text-xs font-medium tracking-wider">
+        <div className="absolute bottom-10 left-0 rotate-[-90deg]">
+          <span className=" text-gray-700  p-1 text-xs font-medium tracking-wider">
             {product.brand}
           </span>
         </div>
       </div>
       <div className="p-6">
-        <div className="text-xs text-gray-500 mb-1 tracking-wider">{product.brand}</div>
-        <h3 className="text-lg font-medium text-primary mb-2">{product.name}</h3>
+        {/* <div className="text-xs text-gray-500 mb-1 tracking-wider">{product.brand}</div> */}
+        <h3 className="text-lg cursor-pointer hover:text-[#c58e46] transition-colors duration-200 font-medium text-primary mb-2">{product.name}</h3>
         <div className="flex items-center space-x-2">
           {hasDiscount && (
             <span className="text-sm text-gray-500 line-through">

@@ -8,6 +8,7 @@ import Statistics from "@/components/sections/Statistics";
 import PopularModels from "@/components/sections/PopularModels";
 import CustomerReviews from "@/components/sections/CustomerReviews";
 import News from "@/components/sections/News";
+import YouTubeVideo from "../components/sections/YouTubeVideo";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero />
         <BrandLogos />
         <Categories />
+        <YouTubeVideo />
         <NewArrivals />
         <Statistics />
         <PopularModels />
