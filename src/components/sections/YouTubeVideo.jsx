@@ -18,7 +18,7 @@ export default function YouTubeVideo() {
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
     allowfullscreen
-    class="absolute top-0 left-0 w-[177.77vh] h-[100vh] -left-[calc((177.77vh-100vw)/2)]"
+    class="absolute top-0  w-[177.77vh] h-[100vh] -left-[calc((177.77vh-100vw)/2)]"
   ></iframe>
       <div className="absolute inset-0 left-24 flex items-end justify-start">
         <div className="text-left text-white p-8 md:p-16 max-w-2xl">
