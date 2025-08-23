@@ -22,7 +22,7 @@ export default function NewArrivals() {
           modules={[Navigation, Pagination]}
           spaceBetween={30}
           slidesPerView={1}
-          navigation
+          // navigation
           pagination={{ clickable: true }}
           breakpoints={{
             640: {

@@ -159,6 +159,56 @@ export const products = [
     secondaryImage: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch5.png",
     categoryId: "1",
     isPopular: true
+  },
+{
+    id: "9",
+    name: "Vintage Gold Wristwatch",
+    slug: "vintage-gold-wristwatch",
+    brand: "RADIANT",
+    description: "Classic vintage design with gold accents",
+    price: 19900,
+    originalPrice: 22000,
+    image: "	https://zenny.bzotech.com/wp-content/uploads/2024/08/watch1-768x768.png",
+    secondaryImage: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch8.png",
+    categoryId: "1",
+    isFeatured: true,
+    isPopular: true
+  },
+  {
+    id: "10",
+    name: "Heritage Automatic Watch",
+    slug: "heritage-automatic-watch",
+    brand: "LIGNESS",
+    description: "Premium automatic movement timepiece",
+    price: 8600,
+    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch5.png",
+    secondaryImage: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch3.png",
+    categoryId: "1",
+    isPopular: true
+  },
+  {
+    id: "11",
+    name: "Patek Philippe Nautilus",
+    slug: "patek-philippe-nautilus",
+    brand: "ARINETE",
+    description: "Luxury sport watch with blue dial",
+    price: 7500,
+    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch3.png",
+    secondaryImage: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch8.png",
+    categoryId: "1",
+    isPopular: true
+  },
+  {
+    id: "12",
+    name: "Audemars Piguet Royal",
+    slug: "audemars-piguet-royal",
+    brand: "COSTA",
+    description: "Iconic luxury sports watch",
+    price: 8900,
+    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch4.png",
+    secondaryImage: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch2.png",
+    categoryId: "1",
+    isPopular: true
   }
 ];
 

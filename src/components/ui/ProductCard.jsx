@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Heart } from "lucide-react";
+
+import { Eye, Heart, ShoppingBag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function ProductCard({ product, variant = "default" }) {
@@ -37,9 +38,9 @@ export default function ProductCard({ product, variant = "default" }) {
         </div>
         {hasDiscount && (
           <div className="absolute top-4 left-4 z-10">
-            <span className="bg-highlight text-secondary px-2 py-1 text-xs font-medium rounded">
+            {/* <span className="bg-highlight text-secondary px-2 py-1 text-xs font-medium rounded">
               -{discountPercentage}%
-            </span>
+            </span> */}
           </div>
         )}
         <div className="absolute top-4 right-4 z-10">
@@ -48,11 +49,13 @@ export default function ProductCard({ product, variant = "default" }) {
             size="icon" 
             className="text-text-gray hover:text-highlight transition-colors duration-200"
           >
-            <Heart className="h-5 w-5" /> 
+            <Heart className="h-5 w-5 text-primary  hover:text-[#c58e46]" /> 
+            < Eye className="h-5 w-5 mt-5 text-primary  hover:text-[#c58e46] transition-opacity duration-700" style={{ opacity: isFlipped ? 1 : 0 }} />
+           <ShoppingBag className="h-5 w-5 mt-5 text-primary  hover:text-[#c58e46] transition-opacity duration-700" style={{ opacity: isFlipped ? 1 : 0 }} />
           </Button>
         </div>
         <div className="absolute bottom-10 left-0 rotate-[-90deg] z-10">
-          <span className="text-gray-700 p-1 text-xs font-medium tracking-wider">
+          <span className="text-gray-700 hover:text-[#c58e46] p-1 text-xs font-medium tracking-wider">
             {product.brand}
           </span>
         </div>
