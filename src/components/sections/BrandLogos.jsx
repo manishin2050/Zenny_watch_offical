@@ -1,22 +1,30 @@
 export default function BrandLogos() {
-  const brands = [
-    "angle", "visko", "NEXAR", "mosvolk", 
-    "heymo", "dreams", "Rockorn", "vanilla"
+  const brandImages = [
+    "https://zenny.bzotech.com/wp-content/uploads/2024/08/brand1.png",
+    "https://zenny.bzotech.com/wp-content/uploads/2024/08/brand2.png",
+    "https://zenny.bzotech.com/wp-content/uploads/2024/08/brand3.png",
+    "https://zenny.bzotech.com/wp-content/uploads/2024/08/brand4.png",
+    "https://zenny.bzotech.com/wp-content/uploads/2024/08/brand5.png",
+    "https://zenny.bzotech.com/wp-content/uploads/2024/08/brand6.png",
+    "https://zenny.bzotech.com/wp-content/uploads/2024/08/brand7.png",
+    "https://zenny.bzotech.com/wp-content/uploads/2024/08/brand8.png",
+    "https://zenny.bzotech.com/wp-content/uploads/2024/08/brand9.png",
+    "https://zenny.bzotech.com/wp-content/uploads/2024/08/brand10.png",
+    "https://zenny.bzotech.com/wp-content/uploads/2024/08/brand2.png", // Reusing first image to make 12 total
+    "https://zenny.bzotech.com/wp-content/uploads/2024/08/brand11.png",
   ];
 
   return (
     <section className="py-16 bg-secondary">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 items-center opacity-60">
-          {brands.map((brand, index) => (
-            <div key={index} className="text-center">
-              <span className={`text-2xl text-text-gray ${
-                brand === "visko" || brand === "NEXAR" || brand === "heymo" || brand === "dreams" 
-                  ? "font-bold" 
-                  : "font-light"
-              } ${brand === "NEXAR" ? "tracking-wider" : ""}`}>
-                {brand}
-              </span>
+      <div className="px-20 mx-auto ">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6  gap-8 items-center opacity-100">
+          {brandImages.map((image, index) => (
+            <div key={index} className="text-center flex justify-center items-center">
+              <img 
+                src={image} 
+                alt={`Brand ${index + 1}`} 
+                className=" object-contain"
+              />
             </div>
           ))}
         </div>

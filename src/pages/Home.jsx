@@ -17,7 +17,6 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <BrandLogos />
         <Categories />
         <YouTubeVideo />
         <NewArrivals />
@@ -25,6 +24,7 @@ export default function Home() {
         <PopularModels />
         <Banner />
         <News />
+        <BrandLogos />
         <CustomerReviews />
       </main>
       <Footer />
