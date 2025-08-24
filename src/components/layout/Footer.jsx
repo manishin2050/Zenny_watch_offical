@@ -8,28 +8,28 @@ export default function Footer() {
     <footer className="bg-gray-50 text-primary py-16 ">
       <div className="service flex justify-around mb-12 shadow-sm pt-8 pb-8">
         <div className="shipping flex justify-center gap-4">
-          <div className="flex justify-center items-center">< Truck className="h-16 w-16 font-thin text-primary hover:text-[#c58e46] transition-color duration-300" /></div>
+          <div className="flex gap-1 items-center">< Truck strokeWidth={1} className="h-10 w-16  text-primary hover:text-[#c58e46] transition-color duration-300" /></div>
           <div className="">
             <h5 className="mt-4">Free Shipping</h5>
             <h6 className="text-gray-600" >Free shipping for orders</h6>
           </div>
         </div>
         <div className="shipping flex justify-center gap-4">
-          <div className="flex justify-center items-center">< IdCard className="h-16 w-16 font-thin text-primary hover:text-[#c58e46] transition-color duration-300" /></div>
+          <div className="flex gap-1 items-center">< IdCard strokeWidth={1} className="h-10 w-16  text-primary hover:text-[#c58e46] transition-color duration-300" /></div>
           <div className="">
             <h5 className="mt-4">Free Shipping</h5>
             <h6 className="text-gray-600" >Free shipping for orders</h6>
           </div>
         </div>
         <div className="shipping flex justify-center gap-4">
-          <div className="flex justify-center items-center">< Calendar className="h-16 w-16 font-thin text-primary hover:text-[#c58e46] transition-color duration-300" /></div>
+          <div className="flex gap-1 items-center">< Calendar strokeWidth={1} className="h-10 w-16  text-primary hover:text-[#c58e46] transition-color duration-300" /></div>
           <div className="">
             <h5 className="mt-4">Free Shipping</h5>
             <h6 className="text-gray-600" >Free shipping for orders</h6>
           </div>
         </div>
         <div className="shipping flex justify-center gap-4">
-          <div className="flex justify-center items-center">< IdCardIcon className="h-16 w-16 font-thin text-primary hover:text-[#c58e46] transition-color duration-300" /></div>
+          <div className="flex gap-1 items-center">< IdCardIcon strokeWidth={1} className="h-10 w-16  text-primary hover:text-[#c58e46] transition-color duration-300" /></div>
           <div className="">
             <h5 className="mt-4">Free Shipping</h5>
             <h6 className="text-gray-600" >Free shipping for orders</h6>
