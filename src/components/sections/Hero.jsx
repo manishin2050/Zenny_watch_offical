@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"; // Import Swiper styles
 import "swiper/css/effect-fade"; // Import EffectFade styles
@@ -9,7 +9,7 @@ import { EffectFade, Autoplay, Pagination } from "swiper/modules"; // Import nec
 
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
-
+  const [isAnimating, setIsAnimating] = useState(false);
   const slides = [
     {
       url: "https://zenny.bzotech.com/wp-content/uploads/2024/08/h7-sli1.jpg",
@@ -33,7 +33,16 @@ export default function Hero() {
         "The collection is powered by finely finished mechanical movements, showcasing both technical excellence and avant-garde style.",
     },
   ];
-
+useEffect(() => {
+    const timer = setInterval(() => {
+      setIsAnimating(true);
+      setTimeout(() => {
+        setCurrentSlide((prev) => (prev + 1) % slides.length);
+        setIsAnimating(false);
+      }, 300);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, [slides.length]);
   return (
     <section className="relative bg-black min-h-screen flex items-center overflow-hidden">
       <Swiper
@@ -42,7 +51,7 @@ export default function Hero() {
         fadeEffect={{ crossFade: true }} // Enable smooth cross-fade transition
         loop={true} // Enable infinite loop
         autoplay={{
-          delay: 5000, // 5 seconds between slides
+          delay: 4000, // 5 seconds between slides
           disableOnInteraction: false, // Continue autoplay after user interaction
           pauseOnMouseEnter: true, // Pause on hover
         }}
@@ -60,26 +69,42 @@ export default function Hero() {
             <img
               src={slide.url}
               alt={slide.alt}
-              className="w-full h-full object-cover"
+              className={`w-full h-full object-cover transition-transform duration-2000 ease-in-out ${
+                index === currentSlide ? 'scale-110' : 'scale-100'
+              }`}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
-            <div className="absolute inset-0 flex flex-col justify-center items-center text-white px-6">
-              <h1
-                style={{ fontFamily: "Libre Baskerville" }}
-                className="text-5xl lg:text-6xl font-bold leading-tight mb-6"
-              >
-                {slide.title}
-              </h1>
-              <p className="text-xl text-gray-200 mb-8 leading-relaxed max-w-3xl text-center">
-                {slide.description}
-              </p>
-              <Button
-                variant="outline"
-                className="bg-transparent border-white text-white hover:bg-white hover:text-black transition-all px-10 py-4 text-lg font-bold"
-              >
-                Shop Now
-              </Button>
-            </div>
+            <div className="max-w-2xl absolute  bottom-10 left-10 text-white z-10">
+            <h1
+            style={{fontFamily:'libre baskerville'}} 
+              className={`text-5xl lg:text-6xl font-bold leading-tight mb-6 transition-all duration-1000 ease-in-out ${
+                isAnimating 
+                  ? 'opacity-0 translate-y-[-300px]' 
+                  : 'opacity-100 translate-y-0'
+              }`}
+            >
+              {slides[currentSlide].title}
+            </h1>
+            <p 
+              className={`text-xl text-gray-200 mb-8 leading-relaxed transition-all duration-1000 ease-in-out delay-400 ${
+                isAnimating 
+                  ? 'opacity-0 translate-y-[-300px]' 
+                  : 'opacity-100 translate-y-0'
+              }`}
+            >
+              {slides[currentSlide].description}
+            </p>
+            <Button 
+              variant="outline" 
+              className={`bg-transparent border-white text-white hover:bg-white hover:text-black transition-all duration-1000 ease-in-out delay-600 px-10 py-4 text-lg font-bold ${
+                isAnimating 
+                  ? 'opacity-0 translate-y-[-300px]' 
+                  : 'opacity-100 translate-y-0'
+              }`}
+            >
+              Shop Now
+            </Button>
+          </div>
           </SwiperSlide>
         ))}
       </Swiper>
