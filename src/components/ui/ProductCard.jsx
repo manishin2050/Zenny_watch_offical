@@ -22,7 +22,7 @@ export default function ProductCard({ product, variant = "default" }) {
         onMouseEnter={() => setIsFlipped(true)}
         onMouseLeave={() => setIsFlipped(false)}
       >
-        <div className="relative bg-gray-100 w-full h-64">
+        <div className="relative bg-gray-100 w-full h-40 md:h-64">
           <img 
             src={product.image} 
             alt={product.name} 
@@ -61,14 +61,14 @@ export default function ProductCard({ product, variant = "default" }) {
         </div>
       </div>
       <div className="p-6">
-        <h3 className="text-lg cursor-pointer hover:text-[#c58e46] transition-colors duration-200 font-medium text-primary mb-2">{product.name}</h3>
+        <h3 className="text-xs  md:text-lg cursor-pointer hover:text-[#c58e46] transition-colors duration-200 font-medium text-primary mb-2">{product.name}</h3>
         <div className="flex items-center space-x-2">
           {hasDiscount && (
             <span className="text-sm text-gray-500 line-through">
               {formatPrice(product.originalPrice)}
             </span>
           )}
-          <span className="text-lg font-semibold text-primary">
+          <span className="text-sm md:text-lg font-semibold text-primary">
             {formatPrice(product.price)}
           </span>
         </div>

@@ -15,24 +15,23 @@ export default function NewArrivals() {
     <section className="py-20 bg-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 style={{fontFamily:'libre baskerville'}} className="text-5xl font-semibold text-primary mb-4">New Arrival Collection</h2>
+          <h2 style={{ fontFamily: 'libre baskerville' }} className="md:text-5xl text-2xl font-semibold text-primary mb-4">New Arrival Collection</h2>
         </div>
-        
+
         <Swiper
           modules={[Navigation, Pagination]}
-          spaceBetween={30}
-          slidesPerView={1}
-          // navigation
-          pagination={{ clickable: true }}
+          spaceBetween={20}                // Gap between slides
+          slidesPerView={2}                // Default (applies to mobile first)
+          pagination={{ clickable: true }} // Pagination dots
           breakpoints={{
             640: {
-              slidesPerView: 2,
+              slidesPerView: 2,            // Small tablets
             },
             768: {
-              slidesPerView: 3,
+              slidesPerView: 3,            // Tablets
             },
             1024: {
-              slidesPerView: 4,
+              slidesPerView: 4,            // Desktops
             },
           }}
         >
@@ -42,6 +41,7 @@ export default function NewArrivals() {
             </SwiperSlide>
           ))}
         </Swiper>
+
       </div>
     </section>
   );
