@@ -50,7 +50,7 @@ export default function Hero() {
           // pauseOnMouseEnter: true,
         }}
         speed={1000}
-        grabCursor={true}
+        // grabCursor={true}
         pagination={{
           clickable: true,
           dynamicBullets: true,
@@ -61,13 +61,10 @@ export default function Hero() {
         {slides.map((slide, index) => (
           <SwiperSlide key={index} className="relative">
             <img
+              
               src={slide.url}
               alt={slide.alt}
-              className={`w-full h-full object-cover transition-transform duration-1000 ${
-                currentSlide === index
-                  ? "scale-105"
-                  : "scale-100"
-              }`}
+              className={`w-full h-full  object-cover animate-zoomInOut transition-transform duration-3000 `}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
             <div
@@ -77,14 +74,14 @@ export default function Hero() {
                `}
               style={{ fontFamily: "Libre Baskerville" }}
             >
-              <h1 className={`text-4xl lg:text-6xl font-semibold  leading-tight mb-4 transition-all duration-1000
+              <h1 className={`text-4xl lg:text-6xl  font-semibold  leading-tight mb-10 transition-all duration-1000
                 ${currentSlide === index
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-[-100px]"
                 }`}>
                <div className="lading-relaxed mb-2">{slide.title1}</div>  <div>{slide.title2}</div> 
               </h1>
-              <p className={`text-lg text-gray-200 w-1/2 mb-6 delay-300 leading-relaxed transition-all duration-1000
+              <p className={`text-lg font-sans text-gray-200 w-1/2 mb-10 delay-300 leading-relaxed transition-all duration-1000
                 ${currentSlide === index
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-[-100px]"
@@ -92,8 +89,8 @@ export default function Hero() {
                 {slide.description}
               </p>
               <Button
-                variant="outline"
-                className={`bg-transparent border-white delay-700 text-white hover:bg-white hover:text-black transition-all px-8 py-3 text-lg font-bold transition-all duration-1000
+                // variant="outline"
+                className={`bg-transparent border font-sans border-white delay-700 text-white hover:bg-white hover:text-black transition-all px-8 py-3 text-lg  transition-all duration-1000
                 ${currentSlide === index
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-[-100px]"
