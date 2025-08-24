@@ -14,21 +14,24 @@ export default function Hero() {
     {
       url: "https://zenny.bzotech.com/wp-content/uploads/2024/08/h7-sli1.jpg",
       alt: "Citizen Promaster Marine",
-      title: "Citizen Promaster Marine Collection",
+      title1: "Citizen Promaster",
+      title2: " Marine Collection",
       description:
         "The collection features a variety of designs, including models with depth meters, chronographs, and bold, easy-to-read dials.",
     },
     {
       url: "https://zenny.bzotech.com/wp-content/uploads/2024/08/h7-slide2.jpg",
       alt: "Omega Seamaster Diver",
-      title: "Omega Seamaster Diver Collection",
+      title1: "Omega Seamaster",
+      title2: " Diver Collection",
       description:
         "Featuring ceramic bezels, wave-pattern dials, and luminescent hands and markers, the Seamaster Diver 300M is a perfect choice for both underwater exploration and everyday elegance.",
     },
     {
       url: "https://zenny.bzotech.com/wp-content/uploads/2024/08/h7-sli.jpg",
       alt: "Audemars Piguet Royal Oak",
-      title: "Audemars Piguet Royal Oak Collection",
+      title1: "Audemars Piguet ",
+      title2: " Royal Oak Collection",
       description:
         "The collection is powered by finely finished mechanical movements, showcasing both technical excellence and avant-garde style.",
     },
@@ -42,9 +45,9 @@ export default function Hero() {
         fadeEffect={{ crossFade: true }}
         loop={true}
         autoplay={{
-          delay: 5000,
+          delay: 3000,
           disableOnInteraction: false,
-          pauseOnMouseEnter: true,
+          // pauseOnMouseEnter: true,
         }}
         speed={1000}
         grabCursor={true}
@@ -68,24 +71,33 @@ export default function Hero() {
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
             <div
-              className={`absolute bottom-12 left-12 max-w-xl text-white px-8 py-6 rounded-lg
+              className={`absolute bottom-48 left-12 w-full text-white px-8 py-6 rounded-lg
                 flex flex-col items-start
                 transition-all duration-1000
-                ${currentSlide === index
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-10"
-                }`}
+               `}
               style={{ fontFamily: "Libre Baskerville" }}
             >
-              <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-4">
-                {slide.title}
+              <h1 className={`text-4xl lg:text-6xl font-semibold  leading-tight mb-4 transition-all duration-1000
+                ${currentSlide === index
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-[-100px]"
+                }`}>
+               <div className="lading-relaxed mb-2">{slide.title1}</div>  <div>{slide.title2}</div> 
               </h1>
-              <p className="text-lg text-gray-200 mb-6 leading-relaxed">
+              <p className={`text-lg text-gray-200 w-1/2 mb-6 delay-300 leading-relaxed transition-all duration-1000
+                ${currentSlide === index
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-[-100px]"
+                }`}>
                 {slide.description}
               </p>
               <Button
                 variant="outline"
-                className="bg-transparent border-white text-white hover:bg-white hover:text-black transition-all px-8 py-3 text-lg font-bold"
+                className={`bg-transparent border-white delay-700 text-white hover:bg-white hover:text-black transition-all px-8 py-3 text-lg font-bold transition-all duration-1000
+                ${currentSlide === index
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-[-100px]"
+                }`}
               >
                 Shop Now
               </Button>
