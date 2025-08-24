@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -9,6 +9,13 @@ import { EffectFade, Autoplay, Pagination } from "swiper/modules";
 
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    // Trigger animation on initial load
+    const timer = setTimeout(() => setIsLoaded(true), 100);
+    return () => clearTimeout(timer);
+  }, []);
 
   const slides = [
     {
@@ -47,10 +54,9 @@ export default function Hero() {
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
-          // pauseOnMouseEnter: true,
         }}
         speed={1000}
-        // grabCursor={true}
+        grabCursor={true}
         pagination={{
           clickable: true,
           dynamicBullets: true,
@@ -61,10 +67,9 @@ export default function Hero() {
         {slides.map((slide, index) => (
           <SwiperSlide key={index} className="relative">
             <img
-              
               src={slide.url}
               alt={slide.alt}
-              className={`w-full h-full  object-cover animate-zoomInOut transition-transform duration-3000 `}
+              className={`w-full h-full object-cover animate-zoomInOut transition-transform duration-3000`}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
             <div
@@ -74,26 +79,32 @@ export default function Hero() {
                `}
               style={{ fontFamily: "Libre Baskerville" }}
             >
-              <h1 className={`text-4xl lg:text-6xl  font-semibold  leading-tight mb-10 transition-all duration-1000
-                ${currentSlide === index
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-[-100px]"
+              <h1 className={`text-4xl lg:text-6xl font-semibold leading-tight mb-10 transition-all duration-1000
+                ${
+                  (currentSlide === index && isLoaded) ||
+                  (index === 0 && isLoaded)
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-[-100px]"
                 }`}>
-               <div className="lading-relaxed mb-2">{slide.title1}</div>  <div>{slide.title2}</div> 
+                <div className="leading-relaxed mb-0">{slide.title1}</div>
+                <div>{slide.title2}</div>
               </h1>
               <p className={`text-lg font-sans text-gray-200 w-1/2 mb-10 delay-300 leading-relaxed transition-all duration-1000
-                ${currentSlide === index
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-[-100px]"
+                ${
+                  (currentSlide === index && isLoaded) ||
+                  (index === 0 && isLoaded)
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-[-100px]"
                 }`}>
                 {slide.description}
               </p>
               <Button
-                // variant="outline"
-                className={`bg-transparent border font-sans border-white delay-700 text-white hover:bg-white hover:text-black transition-all px-8 py-3 text-lg  transition-all duration-1000
-                ${currentSlide === index
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-[-100px]"
+                className={`bg-transparent border font-sans border-white delay-700 text-white hover:bg-white hover:text-black transition-all px-8 py-3 text-lg transition-all duration-1000
+                ${
+                  (currentSlide === index && isLoaded) ||
+                  (index === 0 && isLoaded)
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-[-100px]"
                 }`}
               >
                 Shop Now
