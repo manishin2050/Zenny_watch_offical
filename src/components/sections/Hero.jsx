@@ -62,7 +62,7 @@ export default function Hero() {
           dynamicBullets: true,
         }}
         onSlideChange={(swiper) => setCurrentSlide(swiper.realIndex)}
-        className="absolute inset-0 h-full w-full"
+        className="absolute inset-0 h-[120vh] w-full"
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index} className="relative">
@@ -73,7 +73,7 @@ export default function Hero() {
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
             <div
-              className={`absolute bottom-48 left-12 w-full text-white px-8 py-6 rounded-lg
+              className={`absolute bottom-52 left-12 w-full text-white px-8 py-6 rounded-lg
                 flex flex-col items-start
                 transition-all duration-1000
                `}
@@ -81,8 +81,7 @@ export default function Hero() {
             >
               <h1 className={`text-4xl lg:text-6xl font-semibold leading-tight mb-10 transition-all duration-1000
                 ${
-                  (currentSlide === index && isLoaded) ||
-                  (index === 0 && isLoaded)
+                  (currentSlide === index && isLoaded) 
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-[-100px]"
                 }`}>
@@ -91,8 +90,7 @@ export default function Hero() {
               </h1>
               <p className={`text-lg font-sans text-gray-200 w-1/2 mb-10 delay-300 leading-relaxed transition-all duration-1000
                 ${
-                  (currentSlide === index && isLoaded) ||
-                  (index === 0 && isLoaded)
+                  (currentSlide === index && isLoaded)
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-[-100px]"
                 }`}>
@@ -101,8 +99,7 @@ export default function Hero() {
               <Button
                 className={`bg-transparent border font-sans border-white delay-700 text-white hover:bg-white hover:text-black transition-all px-8 py-3 text-lg transition-all duration-1000
                 ${
-                  (currentSlide === index && isLoaded) ||
-                  (index === 0 && isLoaded)
+                  (currentSlide === index && isLoaded) 
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-[-100px]"
                 }`}
