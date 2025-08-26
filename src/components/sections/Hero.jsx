@@ -32,7 +32,7 @@ export default function Hero() {
       title1: "Omega Seamaster",
       title2: " Diver Collection",
       description:
-        "Featuring ceramic bezels, wave-pattern dials, and luminescent hands and markers, the Seamaster Diver 300M is a perfect choice for both underwater exploration and everyday elegance.",
+        "Featuring ceramic bezels, wave-pattern dials, and luminescent hands and markers, the Seamaster Diver 300M is a perfect",
     },
     {
       url: "https://zenny.bzotech.com/wp-content/uploads/2024/08/h7-sli.jpg",
@@ -45,7 +45,7 @@ export default function Hero() {
   ];
 
   return (
-    <section className="relative bg-black min-h-screen flex items-center overflow-hidden">
+    <section className="relative bg-black h-[50vh] md:h-[120vh] flex items-center overflow-hidden">
       <Swiper
         modules={[EffectFade, Autoplay, Pagination]}
         effect="fade"
@@ -62,7 +62,7 @@ export default function Hero() {
           dynamicBullets: true,
         }}
         onSlideChange={(swiper) => setCurrentSlide(swiper.realIndex)}
-        className="absolute inset-0 h-[120vh] w-full"
+        className="absolute inset-0 h-full w-full"
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index} className="relative">
@@ -73,13 +73,13 @@ export default function Hero() {
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
             <div
-              className={`absolute bottom-52 left-12 w-full text-white px-8 py-6 rounded-lg
+              className={`absolute md:bottom-52 bottom-8 left-3 md:left-12 w-full text-white px-8 py-6 rounded-lg
                 flex flex-col items-start
                 transition-all duration-1000
                `}
               style={{ fontFamily: "Libre Baskerville" }}
             >
-              <h1 className={`text-4xl lg:text-6xl font-semibold leading-tight mb-10 transition-all duration-1000
+              <h1 className={`text-xl md:text-6xl font-semibold leading-tight mb-3 md:mb-10 transition-all duration-1000
                 ${
                   (currentSlide === index && isLoaded) 
                     ? "opacity-100 translate-y-0"
@@ -88,7 +88,7 @@ export default function Hero() {
                 <div className="leading-relaxed mb-0">{slide.title1}</div>
                 <div>{slide.title2}</div>
               </h1>
-              <p className={`text-lg font-sans text-gray-200 w-1/2 mb-10 delay-300 leading-relaxed transition-all duration-1000
+              <p className={`text-sm md:text-lg font-sans text-gray-200 md:w-1/2 w-full mb-3 md:mb-10 delay-300 leading-relaxed transition-all duration-1000
                 ${
                   (currentSlide === index && isLoaded)
                     ? "opacity-100 translate-y-0"
@@ -97,7 +97,7 @@ export default function Hero() {
                 {slide.description}
               </p>
               <Button
-                className={`bg-transparent border font-sans border-white delay-700 text-white hover:bg-white hover:text-black transition-all px-8 py-3 text-lg transition-all duration-1000
+                className={`bg-transparent border font-sans border-white delay-700 text-white hover:bg-white hover:text-black transition-all md:px-8 px-3 md:py-3 py-1 text-sm md:text-lg transition-all duration-1000
                 ${
                   (currentSlide === index && isLoaded) 
                     ? "opacity-100 translate-y-0"
