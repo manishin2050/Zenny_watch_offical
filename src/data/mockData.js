@@ -5,57 +5,86 @@ export const categories = [
     name: "Men's Watches",
     slug: "mens-watches",
     description: "Luxury timepieces for men",
-    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/h7-cat1.jpg"
+    image: "Kids_Listing/13-B.jpg",
   },
   {
     id: "2",
     name: "Women's Watches",
     slug: "womens-watches",
     description: "Elegant watches for women",
-    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/h7-cat2.jpg"
+    image: "Kids_Listing/16-B.jpg"
   },
   {
     id: "3",
     name: "Pre-Owned Watches",
     slug: "pre-owned-watches",
     description: "Certified pre-owned luxury watches",
-    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/h7-cat3.jpg"
+    image: "Kids_Listing/18-B.jpg"
   },
   {
     id: "4",
     name: "Pocket Watches",
     slug: "pocket-watches",
     description: "Classic vintage pocket watches",
-    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/h7-cat4.jpg"
+    image: "Kids_Listing/26-B.jpg"
   },
     {
     id: "5",
     name: "Automatic Watches",
     slug: "automatic-watches",
     description: "This is autommatic watch",
-    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/h7-cat5.jpg"
+    image: "Kids_Listing/27-B.jpg"
   },
     {
     id: "6",
     name: "Calendar Watches",
     slug: "calendar-watches",
     description: "This is calendar watch",
-    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/h7-cat6.jpg"
+    image: "Kids_Listing/28-B.jpg"
   },
     {
     id: "7",
     name: "Gold Watches",
     slug: "gold-watches",
     description: "This is gold watch",
-    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/h7-cat7.jpg"
+    image: "Kids_Listing/29-B.jpg"
   },
     {
     id: "8",
     name: "Diving Watches",
     slug: "diving-watches",
     description: "This is diving watch",
-    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/h7-cat8.jpg"
+    image: "Kids_Listing/30-B.jpg"
   },
+    {
+    id: "9",
+    name: "Pocket Watches",
+    slug: "pocket-watches",
+    description: "Classic vintage pocket watches",
+    image: "Kids_Listing/31-B.jpg"
+  },
+    {
+    id: "10",
+    name: "Automatic Watches",
+    slug: "automatic-watches",
+    description: "This is autommatic watch",
+    image: "Kids_Listing/32-B.jpg"
+  },
+    {
+    id: "11",
+    name: "Calendar Watches",
+    slug: "calendar-watches",
+    description: "This is calendar watch",
+    image: "Kids_Listing/34-B.jpg"
+  },
+    {
+    id: "12",
+    name: "Gold Watches",
+    slug: "gold-watches",
+    description: "This is gold watch",
+    image: "Kids_Listing/35-B.jpg"
+  },
+
   
 ];
 
@@ -68,8 +97,8 @@ export const products = [
     description: "Classic vintage design with gold accents",
     price: 19900,
     originalPrice: 22000,
-    image: "	https://zenny.bzotech.com/wp-content/uploads/2024/08/watch1-768x768.png",
-    secondaryImage: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch8.png",
+    image: "	Men_Listing/1-B.jpg",
+    secondaryImage: "Men_Listing/1-D.jpg",
     categoryId: "1",
     isNew: true,
     isFeatured: true
@@ -81,8 +110,8 @@ export const products = [
     brand: "LIGNESS",
     description: "Premium automatic movement timepiece",
     price: 8600,
-    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch5.png",
-    secondaryImage: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch3.png",
+    image: "Men_Listing/2-B.jpg",
+    secondaryImage: "Men_Listing/2-D.jpg",
     categoryId: "1",
     isNew: true
   },
@@ -93,8 +122,8 @@ export const products = [
     brand: "ARINETE",
     description: "Luxury sport watch with blue dial",
     price: 7500,
-    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch3.png",
-    secondaryImage: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch8.png",
+    image: "Men_Listing/3-B.jpg",
+    secondaryImage: "Men_Listing/3-D.jpg",
     categoryId: "1",
     isNew: true
   },
@@ -105,8 +134,8 @@ export const products = [
     brand: "COSTA",
     description: "Iconic luxury sports watch",
     price: 8900,
-    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch4.png",
-    secondaryImage: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch2.png",
+    image: "Men_Listing/4-B.jpg",
+    secondaryImage: "Men_Listing/4-D.jpg",
     categoryId: "1",
     isNew: true
   },
@@ -117,8 +146,8 @@ export const products = [
     brand: "COSTA",
     description: "Premium steel automatic chronograph",
     price: 17800,
-    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch6.png",
-    secondaryImage: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch2.png",
+    image: "Men_Listing/5-B.jpg",
+    secondaryImage: "Men_Listing/5-D.jpg",
     categoryId: "1",
     isPopular: true
   },
@@ -129,8 +158,8 @@ export const products = [
     brand: "JAMIROQUAI",
     description: "Timeless design with leather strap",
     price: 7800,
-    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch8.png",
-    secondaryImage: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch1-768x768.png",
+    image: "Men_Listing/6-B.jpg",
+    secondaryImage: "Men_Listing/6-D.jpg",
     categoryId: "1",
     isPopular: true
   },
@@ -142,8 +171,8 @@ export const products = [
     description: "High-precision chronograph movement",
     price: 16800,
     originalPrice: 19200,
-    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch4.png",
-    secondaryImage: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch5.png",
+    image: "Men_Listing/7-B.jpg",
+    secondaryImage: "Men_Listing/7-D.jpg",
     categoryId: "1",
     isPopular: true
   },
@@ -155,8 +184,8 @@ export const products = [
     description: "Racing-inspired chronograph watch",
     price: 18900,
     originalPrice: 19600,
-    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch7.png",
-    secondaryImage: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch5.png",
+    image: "Men_Listing/8-B.jpg",
+    secondaryImage: "Men_Listing/8-D.jpg",
     categoryId: "1",
     isPopular: true
   },
@@ -168,8 +197,8 @@ export const products = [
     description: "Classic vintage design with gold accents",
     price: 19900,
     originalPrice: 22000,
-    image: "	https://zenny.bzotech.com/wp-content/uploads/2024/08/watch1-768x768.png",
-    secondaryImage: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch8.png",
+    image: "	Men_Listing/9-B.jpg",
+    secondaryImage: "Men_Listing/9-D.jpg",
     categoryId: "1",
     isFeatured: true,
     isPopular: true
@@ -181,8 +210,8 @@ export const products = [
     brand: "LIGNESS",
     description: "Premium automatic movement timepiece",
     price: 8600,
-    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch5.png",
-    secondaryImage: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch3.png",
+    image: "Men_Listing/10-B.jpg",
+    secondaryImage: "Men_Listing/10-D.jpg",
     categoryId: "1",
     isPopular: true
   },
@@ -193,8 +222,8 @@ export const products = [
     brand: "ARINETE",
     description: "Luxury sport watch with blue dial",
     price: 7500,
-    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch3.png",
-    secondaryImage: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch8.png",
+    image: "Men_Listing/11-B.jpg",
+    secondaryImage: "Men_Listing/11-D.jpg",
     categoryId: "1",
     isPopular: true
   },
@@ -205,8 +234,8 @@ export const products = [
     brand: "COSTA",
     description: "Iconic luxury sports watch",
     price: 8900,
-    image: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch4.png",
-    secondaryImage: "https://zenny.bzotech.com/wp-content/uploads/2024/08/watch2.png",
+    image: "Men_Listing/12-B.jpg",
+    secondaryImage: "Men_Listing/12-D.jpg",
     categoryId: "1",
     isPopular: true
   }
