@@ -49,7 +49,7 @@ export default function Footer() {
           <div className="order-1 lg:order-1">
             {/* Company Info */}
             <div>
-              <h3 style={{ fontFamily: 'libre baskerville' }} className="text-5xl font-bold mb-6 tracking-wider">ZENNY</h3>
+              <h3 style={{ fontFamily: 'libre baskerville' }} className="text-5xl font-bold mb-6 tracking-wider">JANVI</h3>
               <p className="text-gray-900 font-[10px]  mb-4">
                 Get the latest updates on new products and upcoming sales
               </p>
