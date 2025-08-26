@@ -19,7 +19,7 @@ export default function Hero() {
 
   const slides = [
     {
-      url: "https://zenny.bzotech.com/wp-content/uploads/2024/08/h7-sli1.jpg",
+      url: "Women_Listing/V_2.jpg",
       alt: "Citizen Promaster Marine",
       title1: "Citizen Promaster",
       title2: " Marine Collection",
@@ -27,7 +27,7 @@ export default function Hero() {
         "The collection features a variety of designs, including models with depth meters, chronographs, and bold, easy-to-read dials.",
     },
     {
-      url: "https://zenny.bzotech.com/wp-content/uploads/2024/08/h7-slide2.jpg",
+      url: "Women_Listing/S_2.jpg",
       alt: "Omega Seamaster Diver",
       title1: "Omega Seamaster",
       title2: " Diver Collection",
@@ -35,7 +35,7 @@ export default function Hero() {
         "Featuring ceramic bezels, wave-pattern dials, and luminescent hands and markers, the Seamaster Diver 300M is a perfect",
     },
     {
-      url: "https://zenny.bzotech.com/wp-content/uploads/2024/08/h7-sli.jpg",
+      url: "Women_Listing/Q_2.jpg",
       alt: "Audemars Piguet Royal Oak",
       title1: "Audemars Piguet ",
       title2: " Royal Oak Collection",
@@ -71,7 +71,7 @@ export default function Hero() {
               alt={slide.alt}
               className={`w-full h-full object-cover animate-zoomInOut transition-transform duration-3000`}
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
             <div
               className={`absolute md:bottom-52 bottom-8 left-3 md:left-12 w-full text-white px-8 py-6 rounded-lg
                 flex flex-col items-start

@@ -21,8 +21,8 @@ export default function Banner() {
       {/* Top Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {[
-          "https://zenny.bzotech.com/wp-content/uploads/2024/08/h7-bn1.jpg",
-          "https://zenny.bzotech.com/wp-content/uploads/2024/08/h7-bn2.jpg",
+          "Women_Listing/P_1.jpg",
+          "Women_Listing/K_3.jpg",
         ].map((src, i) => (
           <div
             key={i}
