@@ -1,2 +1,2 @@
 # Zenny Watch Offical
-this is website for watches
+This is website for watches
